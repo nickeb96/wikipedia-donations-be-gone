@@ -1,0 +1,12 @@
+{
+  "name": "Wikipedia Donations Be Gone",
+  "version": "1.0",
+  "description": "Removes the nagging request for a donation when looking at articles on Wikipedia.",
+  "manifest_version": 2,
+  "content_scripts": [
+    {
+      "js": [ "block-donations.js" ],
+      "matches": [ "http://*.wikipedia.org/*", "https://*.wikipedia.org/*" ]
+    }
+  ]
+}
